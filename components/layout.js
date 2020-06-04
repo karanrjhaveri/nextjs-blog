@@ -25,6 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@karanrjhaveri" />
         <meta name="twitter:description" content="This is a description" />
+        <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
         <meta name="twitter:app:name:iphone" content="This is App Name" />
         <meta name="twitter:app:id:iphone" content="iphoneAppId" />
         <meta name="twitter:app:name:ipad" content="This is App Name" />
