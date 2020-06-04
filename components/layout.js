@@ -23,6 +23,15 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@karanrjhaveri" />
+        <meta name="twitter:description" content="This is a description" />
+        <meta name="twitter:app:name:iphone" content="This is App Name" />
+        <meta name="twitter:app:id:iphone" content="iphoneAppId" />
+        <meta name="twitter:app:name:ipad" content="This is App Name" />
+        <meta name="twitter:app:id:ipad" content="ipadAppId" />
+        <meta name="twitter:app:name:googleplay" content="This is App Name" />
+        <meta name="twitter:app:id:googleplay" content="GplayAppId" />
+        <meta name="twitter:app:country" content="India" />
       </Head>
       <header className={styles.header}>
         {home ? (
