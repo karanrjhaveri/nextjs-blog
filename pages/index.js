@@ -9,7 +9,11 @@ import {NextSEO} from 'next-seo'
 export default function Home({ allPostsData }) {
   const SEO = {
     title: {siteTitle},
-    description: 'Just your normal About Page'
+    description: 'Just your normal About Page',
+    openGraph: {
+      title: {siteTitle},
+      description: 'Just your normal About Page'
+    }
   }
 
   return (
