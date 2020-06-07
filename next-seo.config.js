@@ -1,4 +1,4 @@
-import { siteTitle, url, name } from './components/layout'
+// import { siteTitle, url, name } from './components/layout'
 // export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
 /* <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -12,6 +12,10 @@ import { siteTitle, url, name } from './components/layout'
         <meta name="twitter:app:name:googleplay" content="This is App Name" />
         <meta name="twitter:app:id:googleplay" content="GplayAppId" />
         <meta name="twitter:app:country" content="India" /> */
+
+export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
+export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
+export const name = 'Karan Jhaveri'
 
 export default {
     // title: 'Next.js SEO Plugin',

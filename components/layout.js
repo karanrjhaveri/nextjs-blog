@@ -2,12 +2,8 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import { DefaultSEO } from 'next-seo'
+import { NextSEO, DefaultSEO } from 'next-seo'
 import SEO from '../next-seo.config'
-
-export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
-export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
-export const name = 'Karan Jhaveri'
 
 export default function Layout({ children, home }) {
   return (
