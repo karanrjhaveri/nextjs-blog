@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
-import {siteTitle} from '../next-seo.config'
+import Layout, {siteTitle} from '../components/layout'
+// import {siteTitle} from '../next-seo.config'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
