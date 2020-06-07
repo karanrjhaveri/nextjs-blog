@@ -4,12 +4,19 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import {NextSEO} from 'next-seo'
 
 export default function Home({ allPostsData }) {
+  const SEO = {
+    title: {siteTitle},
+    description: 'Just your normal About Page'
+  }
+
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <NextSEO {...SEO} />
+        {/* <title>{siteTitle}</title> */}
       </Head>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
