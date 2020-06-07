@@ -4,6 +4,11 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { NextSEO, DefaultSEO } from 'next-seo'
 import SEO, {siteTitle, name} from '../next-seo.config'
+
+export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
+export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
+export const name = 'Karan Jhaveri'
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
