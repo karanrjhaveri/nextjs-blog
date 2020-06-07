@@ -12,13 +12,13 @@ export default function Home({ allPostsData }) {
     description: 'Just your normal About Page',
     openGraph: {
       title: {siteTitle},
-      description: 'Just your normal About Page'
+      description: 'Just your normal About Page',
     }
   }
 
   return (
     <Layout home>
-      <NextSEO {...SEO} />
+      <NextSEO config={SEO} />
       {/* <Head>
         <title>{siteTitle}</title>
       </Head> */}

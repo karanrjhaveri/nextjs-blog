@@ -11,9 +11,10 @@ import SEO from '../next-seo.config'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <DefaultSEO {...SEO} />
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
+      {/* <DefaultSEO {...SEO} /> */}
+      <NextSEO config={SEO} />
+      {/* <Head>
+        <link rel="icon" href="/favicon.ico" /> */}
         {/* <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -36,7 +37,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:app:name:googleplay" content="This is App Name" />
         <meta name="twitter:app:id:googleplay" content="GplayAppId" />
         <meta name="twitter:app:country" content="India" /> */}
-      </Head>
+      {/* </Head> */}
       <header className={styles.header}>
         {home ? (
           <>
