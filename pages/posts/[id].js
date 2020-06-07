@@ -3,25 +3,22 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
-import NextSEO from 'next-seo'
+import NextSeo from 'next-seo'
 
 export default function Post({ postData }) {
-
-  let titleFound = postData.title;
-  console.log(titleFound);
 
   return (
 
     <Layout>
-      {/* <NextSEO config={{
-    title: titleFound,
-    openGraph: {
-      title: titleFound,
-    }
-  }} /> */}
-      <Head>
+      {/* <NextSeo
+        title={postData.title}
+        // openGraph={
+        //   title = postData.title
+        // } 
+        /> */}
+      {/* <Head>
         <title>{postData.title}</title>
-      </Head>
+      </Head> */}
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>

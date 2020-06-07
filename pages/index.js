@@ -1,30 +1,28 @@
 // import Head from 'next/head'
 // import Layout from '../components/layout'
-import Layout, {siteTitle} from '../components/layout'
+import Layout from '../components/layout'
 // import { siteTitle } from '../next-seo.config'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 // import {DefaultSEO} from 'next-seo'
-// import SEO from '../next-seo.config'
+import React from 'react'
+import SEO from '../next-seo.config'
+import { NextSeo } from 'next-seo'
+
+const siteTitle = "Next.js Sample Website | Karan Jhaveri"
 
 export default function Home({ allPostsData }) {
 
-  // const SEO = {
-  //   title: {siteTitle},
-  //   description: 'Just your normal About Page',
-  //   openGraph: {
-  //     title: {siteTitle},
-  //     description: 'Just your normal About Page',
-  //   }
-  // }
-
   return (
     <Layout home>
-      {/* <DefaultSEO {...SEO} /> */}
       {/* <NextSEO {...SEO} /> */}
       {/* <NextSEO config={SEO} /> */}
+      <NextSeo
+        title= {siteTitle}
+        description="Just your normal About Page"
+      />
       {/* <Head>
         <title>{siteTitle}</title>
       </Head> */}
