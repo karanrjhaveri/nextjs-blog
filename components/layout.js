@@ -3,8 +3,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { NextSEO, DefaultSEO } from 'next-seo'
-import SEO from '../next-seo.config'
-
+import SEO, {siteTitle, name} from '../next-seo.config'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
