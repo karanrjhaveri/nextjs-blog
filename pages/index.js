@@ -7,19 +7,21 @@ import Link from 'next/link'
 import Date from '../components/date'
 import {NextSEO} from 'next-seo'
 
-export default function Home({ allPostsData }) {
-  const SEO = {
+const SEO = {
+  title: {siteTitle},
+  description: 'Just your normal About Page',
+  openGraph: {
     title: {siteTitle},
     description: 'Just your normal About Page',
-    openGraph: {
-      title: {siteTitle},
-      description: 'Just your normal About Page',
-    }
   }
+}
+
+export default function Home({ allPostsData }) {
 
   return (
     <Layout home>
-      <NextSEO config={SEO} />
+      <NextSEO {...SEO} />
+      {/* <NextSEO config={SEO} /> */}
       {/* <Head>
         <title>{siteTitle}</title>
       </Head> */}

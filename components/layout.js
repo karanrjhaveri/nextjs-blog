@@ -13,8 +13,8 @@ export const name = 'Karan Jhaveri'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      {/* <DefaultSEO {...SEO} /> */}
-      <NextSEO config={SEO} />
+      <DefaultSEO {...SEO} />
+      {/* <NextSEO config={SEO} /> */}
       {/* <Head>
         <link rel="icon" href="/favicon.ico" /> */}
         {/* <meta
