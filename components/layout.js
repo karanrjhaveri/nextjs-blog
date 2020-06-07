@@ -5,8 +5,9 @@ import Link from 'next/link'
 import { DefaultSEO } from 'next-seo'
 import SEO from '../next-seo.config'
 
-// const name = 'Karan Jhaveri'
-// export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
+export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
+export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
+export const name = 'Karan Jhaveri'
 
 export default function Layout({ children, home }) {
   return (

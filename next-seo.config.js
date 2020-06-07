@@ -1,6 +1,5 @@
-const name = 'Karan Jhaveri'
-const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
-export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
+import { siteTitle, url, name } from '../components/layout'
+// export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
     /* <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@karanrjhaveri" />
