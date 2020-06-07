@@ -5,13 +5,10 @@ export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
 export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
 
 
-export default (
-    // <>
-    // <NextSeo
-    {
-        title: { siteTitle },
+export default {
+        title: siteTitle,
         description: 'SEO made easy for Next.js projects | Learn how to build a personal website using Next.js',
-        canonical: { url },
+        canonical: url,
         openGraph: {
             type: 'website',
             locale: 'en_IE',
@@ -31,7 +28,4 @@ export default (
             site: '@karanrjhaveri',
             cardType: 'summary_large_image'
         }
-    }
-    // />
-    // </>
-);
+    };

@@ -5,20 +5,22 @@ import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 import NextSeo from 'next-seo'
 
-export default function Post({ postData }) {
+export default function Post({postData}) {
+
+  // let titleStr = postData.title;
+  // let thisTitle = postData.title;
 
   return (
 
     <Layout>
       {/* <NextSeo
-        title={postData.title}
-        // openGraph={
-        //   title = postData.title
-        // } 
-        /> */}
-      {/* <Head>
+        config={{
+          title: "hello"
+        }} */}
+      />
+      <Head>
         <title>{postData.title}</title>
-      </Head> */}
+      </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
