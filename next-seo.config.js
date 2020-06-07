@@ -1,4 +1,5 @@
 const name = 'Karan Jhaveri'
+const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
 export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
     /* <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
@@ -17,11 +18,12 @@ export default {
     // title: 'Next.js SEO Plugin',
     title: siteTitle,
     description: 'SEO made easy for Next.js projects | Learn how to build a personal website using Next.js',
+    canonical: url,
     openGraph: {
         type: 'website',
         locale: 'en_IE',
         // url: 'https://www.garymeehan.ie',
-        url: 'https://nextjs-blog.karanrjhaveri.now.sh',
+        url: url,
         // title: 'Next.js Seo',
         title: siteTitle,
         description: 'SEO made easy for Next.js projects | Learn how to build a personal website using Next.js',
