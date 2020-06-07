@@ -5,7 +5,7 @@ export const siteTitle = 'Next.js Sample Website | Karan Jhaveri'
 export const url = 'https://nextjs-blog.karanrjhaveri.now.sh'
 
 
-export default () => (
+export default (
     // <>
     // <NextSeo
     {
