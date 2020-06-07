@@ -3,10 +3,22 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import NextSEO from 'next-seo'
 
 export default function Post({ postData }) {
+
+  let titleFound = postData.title;
+  console.log(titleFound);
+
   return (
+
     <Layout>
+      {/* <NextSEO config={{
+    title: titleFound,
+    openGraph: {
+      title: titleFound,
+    }
+  }} /> */}
       <Head>
         <title>{postData.title}</title>
       </Head>

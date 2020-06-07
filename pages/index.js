@@ -1,26 +1,29 @@
-import Head from 'next/head'
+// import Head from 'next/head'
+// import Layout from '../components/layout'
 import Layout, {siteTitle} from '../components/layout'
-// import {siteTitle} from '../next-seo.config'
+// import { siteTitle } from '../next-seo.config'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-import {NextSEO} from 'next-seo'
-
-const SEO = {
-  title: {siteTitle},
-  description: 'Just your normal About Page',
-  openGraph: {
-    title: {siteTitle},
-    description: 'Just your normal About Page',
-  }
-}
+// import {DefaultSEO} from 'next-seo'
+// import SEO from '../next-seo.config'
 
 export default function Home({ allPostsData }) {
 
+  // const SEO = {
+  //   title: {siteTitle},
+  //   description: 'Just your normal About Page',
+  //   openGraph: {
+  //     title: {siteTitle},
+  //     description: 'Just your normal About Page',
+  //   }
+  // }
+
   return (
     <Layout home>
-      <NextSEO {...SEO} />
+      {/* <DefaultSEO {...SEO} /> */}
+      {/* <NextSEO {...SEO} /> */}
       {/* <NextSEO config={SEO} /> */}
       {/* <Head>
         <title>{siteTitle}</title>
