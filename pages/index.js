@@ -18,10 +18,10 @@ export default function Home({ allPostsData }) {
 
   return (
     <Layout home>
-      <Head>
-        <NextSEO {...SEO} />
-        {/* <title>{siteTitle}</title> */}
-      </Head>
+      <NextSEO {...SEO} />
+      {/* <Head>
+        <title>{siteTitle}</title>
+      </Head> */}
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>

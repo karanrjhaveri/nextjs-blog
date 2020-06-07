@@ -11,9 +11,9 @@ import SEO from '../next-seo.config'
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <DefaultSEO {...SEO} />
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <DefaultSEO {...SEO} />
         {/* <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
