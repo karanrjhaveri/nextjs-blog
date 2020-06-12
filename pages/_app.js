@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps}) { // , navigation
 
     return (
         <>
-            <DefaultSeo {...SEO} />
+            {/* <DefaultSeo {...SEO} /> */}
             {/* <ThemeProvider theme={theme}> */}
                 {/* <GlobalStyles /> */}
                 {/* <Header navigation={navigation}/> */}

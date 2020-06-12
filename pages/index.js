@@ -20,11 +20,11 @@ export default function Home({ allPostsData }) {
     <Layout home>
       {/* <NextSEO {...SEO} /> */}
       {/* <NextSEO config={SEO} /> */}
-      {/* <NextSeo
+      <NextSeo
         title= {siteTitle}
         description="Just your normal About Page"
-      /> */}
-    <Helmet>
+      />
+    {/* <Helmet>
       <meta charSet="utf-8" />
       <title>{siteTitle}</title>
       <meta name="keywords" content="HTML,CSS,JavaScript" />
@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
         content="About page using react helmet very easy to implement"
       />
       <link rel="canonical" href="http://mysite.com/example" />
-    </Helmet>
+    </Helmet> */}
       {/* <Head>
         <title>{siteTitle}</title>
       </Head> */}
