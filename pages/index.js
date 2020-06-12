@@ -10,6 +10,7 @@ import Date from '../components/date'
 import React from 'react'
 import SEO from '../next-seo.config'
 import { NextSeo } from 'next-seo'
+import { Helmet } from "react-helmet";
 
 const siteTitle = "Next.js Sample Website | Karan Jhaveri"
 
@@ -19,10 +20,20 @@ export default function Home({ allPostsData }) {
     <Layout home>
       {/* <NextSEO {...SEO} /> */}
       {/* <NextSEO config={SEO} /> */}
-      <NextSeo
+      {/* <NextSeo
         title= {siteTitle}
         description="Just your normal About Page"
+      /> */}
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{siteTitle}</title>
+      <meta name="keywords" content="HTML,CSS,JavaScript" />
+      <meta
+        name="description"
+        content="About page using react helmet very easy to implement"
       />
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
       {/* <Head>
         <title>{siteTitle}</title>
       </Head> */}

@@ -16,8 +16,8 @@ export default function Post({postData}) {
       {/* <NextSeo
         config={{
           title: "hello"
-        }} */}
-      />
+        }}
+      />*/}
       <Head>
         <title>{postData.title}</title>
       </Head>
