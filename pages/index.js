@@ -31,9 +31,22 @@ export default function Home({ allPostsData }) {
       openGraph= {{
             title: siteTitle,
             description: 'Just your normal About Page',
-            image: `https://og-image.now.sh/${encodeURI(
-                 {siteTitle}
-               )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`,
+            images: [
+              {
+                url: 'https://prismic-io.s3.amazonaws.com/gary-blog%2F3297f290-a885-4cc6-9b19-3235e3026646_default.jpg',
+                width: 800,
+                height: 600,
+                alt: 'Og Image Alt',
+              },
+              {
+                url: 'https://prismic-io.s3.amazonaws.com/gary-blog%2F3297f290-a885-4cc6-9b19-3235e3026646_default.jpg',
+                width: 800,
+                height: 600,
+                alt: 'Og Image Alt 2',
+              }],
+            // image: `https://og-image.now.sh/${encodeURI(
+            //      {siteTitle}
+            //   )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`,
             // image: 'https://prismic-io.s3.amazonaws.com/gary-blog%2F3297f290-a885-4cc6-9b19-3235e3026646_default.jpg',
             site_name: 'karanrjhaveri.now.sh',
             imageWidth: 1200,
