@@ -23,6 +23,11 @@ export default function Home({ allPostsData }) {
       <NextSeo
         title= {siteTitle}
         description="Just your normal About Page"
+        twitter={{
+          handle: '@Early_Salary',
+          site: '@Early_Salary',
+          cardType: 'summary_large_image'
+      }}
       />
     {/* <Helmet>
       <meta charSet="utf-8" />
