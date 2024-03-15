@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "date-fns": "^2.11.1",
-    "gatsby": "^2.23.3",
+    "gatsby": "^2.31.0",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "next-seo": "^4.5.0",
